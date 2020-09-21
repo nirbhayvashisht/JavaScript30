@@ -1,4 +1,4 @@
-TODO: //remove the transition from .hand when seconds reaches at top and toggle it back on 
+//TODO: remove the transition from .hand when seconds reaches at top and toggle it back on 
 
 
 const secondHand = document.querySelector(".second-hand");
@@ -13,7 +13,7 @@ function setDate(){
 
     const secondsDegrees = ((seconds/60) * 360) + 90; //added 90 because of previous offset
     const minutesDegrees = ((minutes/60) * 360) + 90;
-    const hourDegrees = ((hour / 12) * 360) + ((minutes/60)*30) + 90;
+    const hourDegrees = ((hour / 12) * 360)  + 90;
 
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
     minHand.style.transform = `rotate(${minutesDegrees}deg)`;
@@ -21,5 +21,3 @@ function setDate(){
 }
 
 setInterval(setDate,1000);
-
-setDate();
