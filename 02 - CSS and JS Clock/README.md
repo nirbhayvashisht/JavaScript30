@@ -1,4 +1,4 @@
-# Things I learnt from this
+# THINGS THAT I LEARNT FROM IT
 
 ## transform-origin
 to rotate an item from the right-end rather than from the middle, set:
